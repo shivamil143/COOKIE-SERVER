@@ -1,6 +1,104 @@
-#ENCODED BY : MAFIYA XWD
-#ENCRYPTION : Py3 MARSHAL+ZLIB+B64
-#GITHUB : https://github.com/Mafiyahunter
-#----------------------------------------------
-import marshal, base64, zlib
-exec(marshal.loads(zlib.decompress(base64.b64decode(b'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'))))
+from flask import Flask, render_template, request, redirect, url_for
+import requests
+import re
+import time
+import os
+
+app = Flask(__name__)
+
+def make_request(url, headers, cookie):
+    try:
+        response = requests.get(url, headers=headers, cookies={'Cookie': cookie}).text
+        return response
+    except requests.RequestException as e:
+        return str(e)
+
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    if request.method == 'POST':
+        password = request.form['password']
+        if password == "MAFIYA X D3VIL":
+            return redirect(url_for('dashboard'))
+        else:
+            return render_template('index.html', error="Incorrect Password! Try again.")
+    return render_template('index.html')
+
+@app.route('/dashboard', methods=['GET', 'POST'])
+def dashboard():
+    if request.method == 'POST':
+        cookies_file = request.files['cookies_file']
+        id_post = request.form['post_id']
+        commenter_name = request.form['commenter_name']
+        delay = int(request.form['delay'])
+        comment_file = request.files['comment_file']
+
+        # Save uploaded files
+        cookies_file_path = os.path.join('uploads', cookies_file.filename)
+        comment_file_path = os.path.join('uploads', comment_file.filename)
+
+        cookies_file.save(cookies_file_path)
+        comment_file.save(comment_file_path)
+
+        with open(cookies_file_path, 'r') as file:
+            cookies_list = file.read().splitlines()
+
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Linux; Android 11; RMX2144 Build/RKQ1.201217.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/375.1.0.28.111;]'
+        }
+
+        tokens = []
+        for cookie in cookies_list:
+            response = make_request('https://business.facebook.com/business_locations', headers, cookie)
+            try:
+                token_eaag = re.search('(EAAG\w+)', response).group(1)
+                tokens.append(token_eaag)
+            except AttributeError:
+                continue
+
+        if not tokens:
+            return render_template('dashboard.html', error="Token not found in any response")
+
+        with open(comment_file_path, 'r') as file:
+            comments = file.readlines()
+
+        x, y = 0, 0
+        results = []
+
+        while True:
+            try:
+                time.sleep(delay)
+                teks = comments[x].strip()
+                comment_with_name = f"{commenter_name}: {teks}"
+                data = {
+                    'message': comment_with_name,
+                    'access_token': tokens[y % len(tokens)]
+                }
+                response2 = requests.post(f'https://graph.facebook.com/{id_post}/comments/', data=data, cookies={'Cookie': cookies_list[y % len(cookies_list)]}).json()
+                if 'id' in response2:
+                    results.append({
+                        'post_id': id_post,
+                        'datetime': time.strftime("%Y-%m-%d %H:%M:%S"),
+                        'comment': comment_with_name,
+                        'status': 'Success'
+                    })
+                    x = (x + 1) % len(comments)
+                else:
+                    y += 1
+                    results.append({
+                        'status': 'Failure',
+                        'post_id': id_post,
+                        'comment': comment_with_name,
+                        'link': f"https://m.basic.facebook.com//{id_post}"
+                    })
+            except requests.RequestException as e:
+                results.append({'status': 'Error', 'message': str(e)})
+                time.sleep(5.5)
+                continue
+
+        return render_template('dashboard.html', results=results)
+
+    return render_template('dashboard.html')
+
+if __name__ == '__main__':
+    os.makedirs('uploads', exist_ok=True)
+    app.run(host='0.0.0.0', port=5000)
