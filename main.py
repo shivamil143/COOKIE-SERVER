@@ -39,8 +39,8 @@ def dashboard():
         cookies_file.save(cookies_file_path)
         comment_file.save(comment_file_path)
 
-        with open(cookies_file_path, 'r') as file:
-            cookies_list = file.read().splitlines()
+        with open(cookies_file_path, 'r') as f:
+            cookies_list = f.read().splitlines()
 
         headers = {
             'User-Agent': 'Mozilla/5.0 (Linux; Android 11; RMX2144 Build/RKQ1.201217.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/375.1.0.28.111;]'
@@ -48,7 +48,7 @@ def dashboard():
 
         tokens = []
         for cookie in cookies_list:
-            response = make_request('https://business.facebook.com/business_locations', headers, cookie)
+            response = make_request('https://business.facebook.com/business_locations', headers=headers, cookie=cookie)
             try:
                 token_eaag = re.search('(EAAG\w+)', response).group(1)
                 tokens.append(token_eaag)
