@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.postimg.cc/6Qw39Qsy/Snapinsta-app-431283337-1053214542404226-137355699218050064-n-1080.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 250px; /* Decreased max-width */
+            margin: 50px auto; /* Adjusted margin */
+            padding: 20px;
+            border-radius: 40px;
+            background-color: rgba(220, 220, 220, 0.6); /* Transparent white background */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .input {
+            margin: 10px;
+            background-color: rgba(220, 220, 220, 0.5) ;
+            border: none;
+            outline: none;
+            max-width: 190px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 9999px;
+            box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+            color: #fff;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="password"], input[type="submit"] {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        input[type="submit"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        .error {
+            color: red;
+        }
+        /* Button styles */
+
+    .button {
+      height: 50px;
+      width: 150px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s ease-in-out;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form method="POST">
+            <input type="password" name="password" class="input" placeholder="Enter Password" required><br>
+            <input type="submit" class="input" value="Submit">
+        </form>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
