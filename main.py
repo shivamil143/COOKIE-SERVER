@@ -17,7 +17,7 @@ def make_request(url, headers, cookies):
 def index():
     if request.method == 'POST':
         password = request.form['password']
-        if password == "R4JV33R143":
+        if password == "R4JV33RP4P4":
             return redirect(url_for('dashboard'))
         else:
             return render_template('index.html', error="Incorrect Password! Try again.")
